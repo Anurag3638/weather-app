@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">Weather App</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button id="dark-mode-toggle">🌙</button>
+        </nav>
+        <div class="container">
+            <h1>Weather App</h1>
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Enter city name" required>
+                <button type="submit">Get Weather</button>
+            </form>
+            <div id="weather-result">
+                <h2 id="city-name"></h2>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="condition"></p>
+                <center><img id="weather-icon" src="https://img.icons8.com/windows/64/partly-cloudy-day--v1.png" alt="Weather Icon"></center>
+                <p id="error-message"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="darkmode.js"></script>
+    </body>
+
+</html>
